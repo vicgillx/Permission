@@ -83,56 +83,56 @@ extension PermissionType: CustomStringConvertible {
     public var description: String {
         switch self {
         #if PERMISSION_CONTACTS
-        case .contacts: return "Contacts"
+        case .contacts: return "Contacts".localizedString
         #endif
 
         #if PERMISSION_LOCATION
-        case .locationAlways: return "Location"
-        case .locationWhenInUse: return "Location"
+        case .locationAlways: return "Location".localizedString
+        case .locationWhenInUse: return "Location".localizedString
         #endif
 
         #if PERMISSION_NOTIFICATIONS
-        case .notifications: return "Notifications"
+        case .notifications: return "Notifications".localizedString
         #endif
 
         #if PERMISSION_MICROPHONE
-        case .microphone: return "Microphone"
+        case .microphone: return "Microphone".localizedString
         #endif
 
         #if PERMISSION_CAMERA
-        case .camera: return "Camera"
+        case .camera: return "Camera".localizedString
         #endif
 
         #if PERMISSION_PHOTOS
-        case .photos: return "Photos"
+        case .photos: return "Photos".localizedString
         #endif
 
         #if PERMISSION_REMINDERS
-        case .reminders: return "Reminders"
+        case .reminders: return "Reminders".localizedString
         #endif
 
         #if PERMISSION_EVENTS
-        case .events: return "Events"
+        case .events: return "Events".localizedString
         #endif
 
         #if PERMISSION_BLUETOOTH
-        case .bluetooth: return "Bluetooth"
+        case .bluetooth: return "Bluetooth".localizedString
         #endif
 
         #if PERMISSION_MOTION
-        case .motion: return "Motion"
+        case .motion: return "Motion".localizedString
         #endif
 
         #if PERMISSION_SPEECH_RECOGNIZER
-        case .speechRecognizer: return "Speech Recognizer"
+        case .speechRecognizer: return "Speech Recognizer".localizedString
         #endif
 
         #if PERMISSION_SIRI
-        case .siri: return "SiriKit"
+        case .siri: return "SiriKit".localizedString
         #endif
 
         #if PERMISSION_MEDIA_LIBRARY
-        case .mediaLibrary: return "Media Library"
+        case .mediaLibrary: return "Media Library".localizedString
         #endif
 
         case .never: fatalError()

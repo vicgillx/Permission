@@ -1,0 +1,37 @@
+/* 
+  Localizable.strings
+  Permission
+
+  Created by vicgil on 2021/8/25.
+  Copyright © 2021 delba. All rights reserved.
+*/
+
+"PermissionStatus_authorized"    = "允许";
+"PermissionStatus_denied"        = "拒绝";
+"PermissionStatus_disabled"      = "未通过";
+"PermissionStatus_notDetermined" = "未选择";
+"Contacts"  = "通讯录";
+"Location" = "位置";
+"Notifications" = "通知";
+"Microphone" = "麦克风";
+"Camera" = "相机";
+"Photos" = "相册";
+"Reminders" = "提醒事项";
+"Events" = "活动";
+"Bluetooth" = "蓝牙";
+"Motion" = "运动";
+"Speech Recognizer" = "语音识别";
+"SiriKit" = "Siri";
+"Media Library" = "媒体库";
+"Cancel" = "取消";
+"OKCancel" = "好的";
+"Settings" = "设置";
+
+"Confirm" = "确定";
+"%@ is currently disabled" = "%@ 权限未打开";
+"Please enable access to %@ in the Settings app." =  "请在设置中打开%@权限.";
+
+"Permission for %@ was denied" = "%@权限未打开";
+
+"%@ would like to access your %@" =  "%@想打开%@权限"
+"Please enable access to %@." = "请打开%@权限.";

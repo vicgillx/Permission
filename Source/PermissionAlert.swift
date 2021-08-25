@@ -89,9 +89,9 @@ class DisabledAlert: PermissionAlert {
     override init(permission: Permission) {
         super.init(permission: permission)
 
-        title   = "\(permission) is currently disabled"
-        message = "Please enable access to \(permission) in the Settings app."
-        cancel  = "OK"
+        title   = String.localizedStringWithFormat("%@ is currently disabled", "\(permission)")
+        message = String.localizedStringWithFormat("Please enable access to %@ in the Settings app.", "\(permission)")
+        cancel  = "OK".localizedString
     }
 }
 
@@ -112,10 +112,10 @@ class DeniedAlert: PermissionAlert {
     override init(permission: Permission) {
         super.init(permission: permission)
 
-        title    = "Permission for \(permission) was denied"
-        message  = "Please enable access to \(permission) in the Settings app."
-        cancel   = "Cancel"
-        settings = "Settings"
+        title    = String.localizedStringWithFormat("Permission for %@ was denied", "\(permission)")
+        message  = String.localizedStringWithFormat("Please enable access to %@ in the Settings app.", "\(permission)")
+        cancel   = "Cancel".localizedString
+        settings = "Settings".localizedString
     }
 
     @objc func settingsHandler() {
@@ -149,10 +149,12 @@ class PrePermissionAlert: PermissionAlert {
     override init(permission: Permission) {
         super.init(permission: permission)
 
-        title   = "\(Bundle.main.name) would like to access your \(permission)"
-        message = "Please enable access to \(permission)."
-        cancel  = "Cancel"
-        confirm = "Confirm"
+        title   = String.localizedStringWithFormat("%@ would like to access your %@", "\(Bundle.main.name)","\(permission)")
+        
+        message = String.localizedStringWithFormat("Please enable access to %@.", "\(permission)")
+        
+        cancel  = "Cancel".localizedString
+        confirm = "Confirm".localizedString
     }
 
     private func confirmHandler(_ action: UIAlertAction) {

@@ -37,6 +37,6 @@ public enum PermissionStatus: String {
 extension PermissionStatus: CustomStringConvertible {
     /// The textual representation of self.
     public var description: String {
-        return rawValue
+        return rawValue.localizedString
     }
 }

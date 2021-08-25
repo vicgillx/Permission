@@ -1,0 +1,37 @@
+/* 
+  Localizable.strings
+  Permission
+
+  Created by vicgil on 2021/8/25.
+  Copyright © 2021 delba. All rights reserved.
+*/
+"PermissionStatus_authorized"    = "Authorized";
+"PermissionStatus_denied"        = "Denied";
+"PermissionStatus_disabled"      = "Disabled";
+"PermissionStatus_notDetermined" = "Not Determined";
+"Contacts"  = "Contacts";
+"Location" = "Location";
+"Notifications" = "Notifications";
+"Microphone" = "Microphone";
+"Camera" = "Camera";
+"Photos" = "Photos";
+"Reminders" = "Reminders";
+"Events" = "Events";
+"Bluetooth" = "Bluetooth";
+"Motion" = "Motion";
+"Speech Recognizer" = "Speech Recognizer";
+"SiriKit" = "SiriKit";
+"Media Library" = "Media Library";
+"Cancel" = "Cancel";
+"OKCancel" = "OK";
+"Settings" = "Settings";
+
+"Confirm" = "Confirm";
+"%@ is currently disabled" = "%@ is currently disabled";
+"Please enable access to %@ in the Settings app." =  "Please enable access to %@ in the Settings app.";
+
+"Permission for %@ was denied" = "Permission for %@ was denied";
+
+"Please enable access to %@ in the Settings app." = "Please enable access to %@ in the Settings app.";
+"%@ would like to access your %@" =  "%@ would like to access your %@"
+"Please enable access to %@." = "Please enable access to %@.";

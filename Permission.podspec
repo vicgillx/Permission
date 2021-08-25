@@ -5,8 +5,11 @@ Pod::Spec.new do |s|
   s.homepage      = 'https://github.com/delba/Permission'
   s.author        = { 'Damien' => 'damien@delba.io' }
   s.summary       = 'A unified API to ask for permissions on iOS'
-  s.source        = { :git => 'https://github.com/delba/Permission.git', :tag => s.version }
+  s.source        = { :git => 'https://github.com/vicgillx/Permission.git', :tag => s.version }
   s.swift_version = '5.1'
+  s.resource_bundles = {
+  'Permission' => ['Source/Resource/*']
+}
 
   s.weak_framework = 'Speech'
 

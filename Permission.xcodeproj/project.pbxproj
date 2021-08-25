@@ -32,6 +32,8 @@
 		6DF9C2C61C8F5B4C000710C1 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF9C2C51C8F5B4C000710C1 /* Location.swift */; };
 		84742782230896D2007A7922 /* PermissionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84742781230896D2007A7922 /* PermissionSet.swift */; };
 		8474278423089751007A7922 /* PermissionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8474278323089751007A7922 /* PermissionType.swift */; };
+		89F9FC1326D624BF00CA2F8A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89F9FC1526D624BF00CA2F8A /* Localizable.strings */; };
+		89F9FC1826D6259600CA2F8A /* PermissionLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9FC1726D6259600CA2F8A /* PermissionLocal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,9 @@
 		6DF9C2C51C8F5B4C000710C1 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		84742781230896D2007A7922 /* PermissionSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionSet.swift; sourceTree = "<group>"; };
 		8474278323089751007A7922 /* PermissionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionType.swift; sourceTree = "<group>"; };
+		89F9FC1426D624BF00CA2F8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		89F9FC1626D6250600CA2F8A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		89F9FC1726D6259600CA2F8A /* PermissionLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionLocal.swift; sourceTree = "<group>"; };
 		D08FF2891DC3AD2900F28088 /* PermissionFlags.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PermissionFlags.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +129,7 @@
 				84742781230896D2007A7922 /* PermissionSet.swift */,
 				6D491E771C9CA90B00611006 /* PermissionStatus.swift */,
 				8474278323089751007A7922 /* PermissionType.swift */,
+				89F9FC1926D62E7100CA2F8A /* Resource */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -176,6 +182,15 @@
 				6D0EBDBC1BFCF8B700C35F8E /* Utilities.swift */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89F9FC1926D62E7100CA2F8A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				89F9FC1726D6259600CA2F8A /* PermissionLocal.swift */,
+				89F9FC1526D624BF00CA2F8A /* Localizable.strings */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +270,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 6D86A9A81BEBDC7C00E3DD5A;
 			productRefGroup = 6D86A9B31BEBDC7D00E3DD5A /* Products */;
@@ -272,6 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89F9FC1326D624BF00CA2F8A /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +318,7 @@
 				8474278423089751007A7922 /* PermissionType.swift in Sources */,
 				6DF9C2C61C8F5B4C000710C1 /* Location.swift in Sources */,
 				3F21DC7E1E30E0B900B3EF65 /* Siri.swift in Sources */,
+				89F9FC1826D6259600CA2F8A /* PermissionLocal.swift in Sources */,
 				6DA8B4B21BFB8AD8007A94FC /* PermissionAlert.swift in Sources */,
 				3D42A7DB1D5F66B300236ABA /* SpeechRecognizer.swift in Sources */,
 				6DF9C2BE1C8F4FE5000710C1 /* Photos.swift in Sources */,
@@ -331,6 +349,18 @@
 			targetProxy = 6D86A9BE1BEBDC7D00E3DD5A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		89F9FC1526D624BF00CA2F8A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89F9FC1426D624BF00CA2F8A /* en */,
+				89F9FC1626D6250600CA2F8A /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6D86A9C41BEBDC7D00E3DD5A /* Debug */ = {
