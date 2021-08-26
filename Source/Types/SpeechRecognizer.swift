@@ -22,7 +22,7 @@
 // SOFTWARE.
 //
 
-#if PERMISSION_SPEECH_RECOGNIZER
+
 import Speech
 
 extension Permission {
@@ -57,4 +57,4 @@ extension Permission {
         }
     }
 }
-#endif
+

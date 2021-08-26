@@ -22,7 +22,7 @@
 // SOFTWARE.
 //
 
-#if PERMISSION_MEDIA_LIBRARY
+
 import MediaPlayer
 
 extension Permission {
@@ -52,4 +52,4 @@ extension Permission {
         }
     }
 }
-#endif
+

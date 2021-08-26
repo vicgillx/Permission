@@ -22,7 +22,7 @@
 // SOFTWARE.
 //
 
-#if PERMISSION_MOTION
+
 import CoreMotion
 
 private let MotionManager = CMMotionActivityManager()
@@ -80,4 +80,4 @@ extension Permission {
         return status
     }
 }
-#endif
+

@@ -22,7 +22,7 @@
 // SOFTWARE.
 //
 
-#if PERMISSION_NOTIFICATIONS
+
 import UserNotifications
 
 extension Permission {
@@ -68,4 +68,4 @@ extension Permission {
         return status
     }
 }
-#endif
+

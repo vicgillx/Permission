@@ -78,7 +78,6 @@
 		89F9FC1426D624BF00CA2F8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		89F9FC1626D6250600CA2F8A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		89F9FC1726D6259600CA2F8A /* PermissionLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionLocal.swift; sourceTree = "<group>"; };
-		D08FF2891DC3AD2900F28088 /* PermissionFlags.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PermissionFlags.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,7 +177,6 @@
 			children = (
 				6D86A9B71BEBDC7D00E3DD5A /* Info.plist */,
 				6D86A9B51BEBDC7D00E3DD5A /* Permission.h */,
-				D08FF2891DC3AD2900F28088 /* PermissionFlags.xcconfig */,
 				6D0EBDBC1BFCF8B700C35F8E /* Utilities.swift */,
 			);
 			path = "Supporting Files";
@@ -365,7 +363,6 @@
 /* Begin XCBuildConfiguration section */
 		6D86A9C41BEBDC7D00E3DD5A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D08FF2891DC3AD2900F28088 /* PermissionFlags.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -427,7 +424,6 @@
 		};
 		6D86A9C51BEBDC7D00E3DD5A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D08FF2891DC3AD2900F28088 /* PermissionFlags.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -482,7 +478,6 @@
 		};
 		6D86A9C71BEBDC7D00E3DD5A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D08FF2891DC3AD2900F28088 /* PermissionFlags.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -505,7 +500,6 @@
 		};
 		6D86A9C81BEBDC7D00E3DD5A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D08FF2891DC3AD2900F28088 /* PermissionFlags.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -527,7 +521,6 @@
 		};
 		6D86A9CA1BEBDC7D00E3DD5A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D08FF2891DC3AD2900F28088 /* PermissionFlags.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Tests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -539,7 +532,6 @@
 		};
 		6D86A9CB1BEBDC7D00E3DD5A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D08FF2891DC3AD2900F28088 /* PermissionFlags.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Tests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

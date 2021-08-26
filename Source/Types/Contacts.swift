@@ -22,7 +22,7 @@
 // SOFTWARE.
 //
 
-#if PERMISSION_CONTACTS
+
 import Contacts
 
 extension Permission {
@@ -47,4 +47,4 @@ extension Permission {
         }
     }
 }
-#endif
+

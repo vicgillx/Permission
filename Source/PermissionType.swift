@@ -23,117 +23,40 @@
 //
 
 public enum PermissionType {
-    #if PERMISSION_CONTACTS
     case contacts
-    #endif
-
-    #if PERMISSION_LOCATION
     case locationAlways
     case locationWhenInUse
-    #endif
-
-    #if PERMISSION_NOTIFICATIONS
     case notifications(UNAuthorizationOptions)
-    #endif
-
-    #if PERMISSION_MICROPHONE
     case microphone
-    #endif
-
-    #if PERMISSION_CAMERA
     case camera
-    #endif
-
-    #if PERMISSION_PHOTOS
     case photos
-    #endif
-
-    #if PERMISSION_REMINDERS
     case reminders
-    #endif
-
-    #if PERMISSION_EVENTS
     case events
-    #endif
-
-    #if PERMISSION_BLUETOOTH
     case bluetooth
-    #endif
-
-    #if PERMISSION_MOTION
     case motion
-    #endif
-
-    #if PERMISSION_SPEECH_RECOGNIZER
     @available(iOS 10.0, *) case speechRecognizer
-    #endif
-
-    #if PERMISSION_MEDIA_LIBRARY
     @available(iOS 9.3, *) case mediaLibrary
-    #endif
-
-    #if PERMISSION_SIRI
     @available(iOS 10.0, *) case siri
-    #endif
-
     case never
 }
 
 extension PermissionType: CustomStringConvertible {
     public var description: String {
         switch self {
-        #if PERMISSION_CONTACTS
         case .contacts: return "Contacts".localizedString
-        #endif
-
-        #if PERMISSION_LOCATION
         case .locationAlways: return "Location".localizedString
         case .locationWhenInUse: return "Location".localizedString
-        #endif
-
-        #if PERMISSION_NOTIFICATIONS
         case .notifications: return "Notifications".localizedString
-        #endif
-
-        #if PERMISSION_MICROPHONE
         case .microphone: return "Microphone".localizedString
-        #endif
-
-        #if PERMISSION_CAMERA
         case .camera: return "Camera".localizedString
-        #endif
-
-        #if PERMISSION_PHOTOS
         case .photos: return "Photos".localizedString
-        #endif
-
-        #if PERMISSION_REMINDERS
         case .reminders: return "Reminders".localizedString
-        #endif
-
-        #if PERMISSION_EVENTS
         case .events: return "Events".localizedString
-        #endif
-
-        #if PERMISSION_BLUETOOTH
         case .bluetooth: return "Bluetooth".localizedString
-        #endif
-
-        #if PERMISSION_MOTION
         case .motion: return "Motion".localizedString
-        #endif
-
-        #if PERMISSION_SPEECH_RECOGNIZER
         case .speechRecognizer: return "Speech Recognizer".localizedString
-        #endif
-
-        #if PERMISSION_SIRI
         case .siri: return "SiriKit".localizedString
-        #endif
-
-        #if PERMISSION_MEDIA_LIBRARY
         case .mediaLibrary: return "Media Library".localizedString
-        #endif
 
         case .never: fatalError()
         }

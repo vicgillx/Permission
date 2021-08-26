@@ -33,5 +33,5 @@
 
 "Permission for %@ was denied" = "%@权限未打开";
 
-"%@ would like to access your %@" =  "%@想打开%@权限"
+"%@ would like to access your %@" =  "%@想打开%@权限";
 "Please enable access to %@." = "请打开%@权限.";

@@ -22,7 +22,7 @@
 // SOFTWARE.
 //
 
-#if PERMISSION_REMINDERS
+
 import EventKit
 
 extension Permission {
@@ -43,4 +43,4 @@ extension Permission {
         }
     }
 }
-#endif
+

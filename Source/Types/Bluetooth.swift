@@ -22,7 +22,7 @@
 // SOFTWARE.
 //
 
-#if PERMISSION_BLUETOOTH
+
 import CoreBluetooth
 
 let BluetoothManager = CBPeripheralManager(
@@ -80,4 +80,4 @@ extension CBPeripheralManager {
         stopAdvertising()
     }
 }
-#endif
+

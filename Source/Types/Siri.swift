@@ -22,7 +22,7 @@
 // SOFTWARE.
 //
 
-#if PERMISSION_SIRI
+
 import Intents
 
 extension Permission {
@@ -52,4 +52,4 @@ extension Permission {
         }
     }
 }
-#endif
+
